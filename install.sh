@@ -1,7 +1,7 @@
 #!/bin/sh
 
 printf "\033[32;1mInstalling packeges\033[0m\n"
-apk update && apk get curl kmod-nft-tproxy xray-core 
+apk update && apk add curl kmod-nft-tproxy xray-core 
 
 printf "\033[32;1mDownloading config.json\033[0m\n"
 curl -Lo /etc/xray/config.json https://raw.githubusercontent.com/FiyeroT/getdomains-snap/main/config.json
